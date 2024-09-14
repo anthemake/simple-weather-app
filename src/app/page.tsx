@@ -20,7 +20,7 @@ export default function Home() {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get<WeatherData>(`/api/getWeather?city=${city}`);
+      const response = await axios.get(`/api/getWeather?city=${city}`);
       setWeatherData(response.data);
     } catch (err) {
       setError('Could not fetch weather data');
