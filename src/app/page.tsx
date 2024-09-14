@@ -1,17 +1,26 @@
+"use client";
+
 import { useState } from 'react';
 import axios from 'axios';
 
+
+type WeatherData = {
+  name: string;
+  weather: { description: string }[];
+  main: { temp: number; humidity: number };
+};
+
 export default function Home() {
   const [city, setCity] = useState<string>('');
-  const [weatherData, setWeatherData] = useState<any>(null);
+  const [weatherData, setWeatherData] = useState<WeatherData | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
   const fetchWeather = async () => {
-    setLoading(true); 
+    setLoading(true);
     setError(null);
     try {
-      const response = await axios.get(`/api/getWeather?city=${city}`);
+      const response = await axios.get<WeatherData>(`/api/getWeather?city=${city}`);
       setWeatherData(response.data);
     } catch (err) {
       setError('Could not fetch weather data');
