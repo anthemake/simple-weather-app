@@ -1,40 +1,58 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Simple Get Weather Web App
 
-## Getting Started
+## Overview
+A web application that fetches real-time weather data for a given city. You can enter a city name to retrieve the current weather conditions for many things. This app currently shows the Current Condition, Temperature, Feels-Like Temperature, Humidity, and Wind Speed. Its a simple project that you can mess around with and easy to setup using sites like RapidAPI.
 
-First, run the development server:
+<img src=".public/demo/miami-florida.png" alt="Miami Florida Example" width="500"/>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
+- Randomized background images for each session.
+- Displays real-time weather data for any city entered.
+- UI design for displaying weather information.
+- Input sanitization to prevent security vulnerabilities.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Technologies Used
+- **Frontend**: Next.JS, React, Tailwind CSS, TypeScript
+- **Backend**: Node.js, Weather API integration, Azure Functions
+- **Security**: Validator.js for input validation
+- **API**: WeatherAPI
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
+1. Clone the repository:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> git clone <repo-url>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Install dependencies:
 
-## Deploy on Vercel
+> npm install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Set up your .env.local file with your API key:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# simple-weather-app
->>>>>>> 64c119b0c2235f092d05505f7b652a4a811b9130
+> WEATHER_API_KEY=<your-api-key>
+
+### Start the development server:
+
+> npm run dev
+
+# Security Features
+
+- Input sanitization using Validator.js
+- HTTPS and CSP are recommended for deployment.
+
+# How to Use
+
+1. Enter a city name in the input field.
+2. Press the "Get Weather" button to retrieve weather data.
+3. View the current conditions, temperature, humidity, and more.
+
+# Future Enhancements
+
+- Featured city list.
+- Allow users to switch between Fahrenheit and Celsius.
+
+# License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

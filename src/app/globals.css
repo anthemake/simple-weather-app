@@ -25,3 +25,8 @@ body {
     text-wrap: balance;
   }
 }
+
+.frosted-box {
+  @apply bg-opacity-10 bg-blue-200 backdrop-blur-lg text-white shadow-lg;
+}
+
