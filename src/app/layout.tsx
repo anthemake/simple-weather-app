@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Simple Get Weather App",
-  description: "US city weather",
+  description: "Get any city weather",
 };
 
 export default function RootLayout({

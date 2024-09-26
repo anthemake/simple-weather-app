@@ -3,7 +3,7 @@
 ## Overview
 A web application that fetches real-time weather data for a given city. You can enter a city name to retrieve the current weather conditions for many things. This app currently shows the Current Condition, Temperature, Feels-Like Temperature, Humidity, and Wind Speed. Its a simple project that you can mess around with and easy to setup using sites like RapidAPI.
 
-<img src=".public/demo/miami-florida.png" alt="Miami Florida Example" width="500"/>
+<img src="public/demo/miami-florida.png" alt="Miami Florida Example" width="500"/>
 
 
 
