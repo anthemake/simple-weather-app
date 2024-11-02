@@ -52,6 +52,7 @@ A web application that fetches real-time weather data for a given city. You can 
 
 - Featured city list.
 - Allow users to switch between Fahrenheit and Celsius.
+- More Visual UI/UX edits
 
 # License
 
