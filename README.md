@@ -9,6 +9,7 @@ A web application that fetches real-time weather data for a given city. You can 
 
 ## Features
 - Favorites feature to save different locations.
+- Use current location option
 - Randomized background images for each session.
 - Displays real-time weather data for any city entered.
 - UI design for displaying weather information.
